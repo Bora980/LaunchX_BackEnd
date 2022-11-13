@@ -16,3 +16,7 @@ snake_cae - Python, JavaScript
 CASE - Constantes
 
 */
+
+parrafoInicial.onclick = function(){
+    accion()
+}

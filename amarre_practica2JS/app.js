@@ -14,5 +14,21 @@ btnSi.addEventListener("click", function(e) {
     alert('SABÍA QUE DIRÍAS QUE SI. Casemonos ya y tengamos hijos. TE AMO!!!')
     divModoSexo.style.display = 'block';
     const cancion = new Audio('img\\y2mate.com - mujer_intro_KmMfLJf8FrI.mp3');
-    cancion.play();
+    // cancion.play();
+});
+
+divModoSexo.addEventListener('click', function(e) {
+    // divModoSexo.innerHTML= "<img src='https://i.pinimg.com/originals/c5/e3/c9/c5e3c9b5260daa31f5a4ab03ff048ece.png'>";
+    const img = document.createElement("img");
+    img.src = "https://i.pinimg.com/originals/c5/e3/c9/c5e3c9b5260daa31f5a4ab03ff048ece.png";
+    console.log(img)
+    divModoSexo.appendChild(img)
+});
+
+botones = document.getElementsByTagName('button')
+console.log(botones[0])
+
+window.addEventListener('beforeonload',(event) =>{
+    event.preventDefault();
+    event.returnValue = ""
 });
